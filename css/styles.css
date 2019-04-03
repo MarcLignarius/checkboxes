@@ -1,3 +1,15 @@
 #luckyOutput, #unluckyOutput, #neutralOutput {
   display: none;
 }
+
+#luckSurvey img {
+  width: 50%;
+  height: 50%;
+  margin-bottom: 10px;
+}
+
+#unluckyOutput img, #luckyOutput img, #neutralOutput img {
+  width: 50%;
+  height: 50%;
+  margin-bottom: 20px;
+}
