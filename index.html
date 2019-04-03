@@ -6,41 +6,57 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Site Title</title>
+  <title>For Loops Practice: Fortune Teller</title>
 </head>
 <body>
   <div class="container">
     <div class="jumbotron">
-      <h1>Site Heading</h1>
-      <p>Site Intro</p>
+      <h1>For Loops Practice: Fortune Teller</h1>
+      <em>Do you feel lucky, punk?</em>
     </div>
-    <form id="luck-survey">
-      <div class="form-group" id="luckyEvents" >
+    <form id="luckSurvey">
+      <div class="form-group">
+        <img src="img/teller.png" alt="fortune teller">
         <p>In the past week, have you experienced any of the following lucky events?</p>
-        <input type="checkbox" name="lucky" value="dinosaur">Having a dinosaur on your monitor.<br>
-        <input type="checkbox" name="lucky" value="tea">Drinking Earl Grey tea.<br>
-        <input type="checkbox" name="lucky" value="elevator">Riding an elevator.<br>
-        <input type="checkbox" name="lucky" value="beanie">Wearing a beanie.<br>
-        <input type="checkbox" name="lucky" value="plant">Having a plant on your desk.<br>
+        <input type="checkbox" name="lucky" value="option1">Seeing a ladybug.<br>
+        <input type="checkbox" name="lucky" value="option2">Finding a four-leaf clover.<br>
+        <input type="checkbox" name="lucky" value="option3">Finding a horseshoe.<br>
+        <input type="checkbox" name="lucky" value="option4">Wearing a rabbit's foot.<br>
+        <input type="checkbox" name="lucky" value="option5">Adding a garden gnome to your garden.<br>
       </div>
-      <div class="form-group" id="unluckyEvents">
+      <div class="form-group">
         <p>In the past week, have you experienced any of the following unlucky events?</p>
-        <input type="checkbox" name="unlucky" value="dinosaur">Having a dinosaur on your face.<br>
-        <input type="checkbox" name="unlucky" value="tea">Spilling hot tea on yourself.<br>
-        <input type="checkbox" name="unlucky" value="elevator">Facing backwards in an elevator.<br>
-        <input type="checkbox" name="unlucky" value="hat">Wearing a top hat.<br>
-        <input type="checkbox" name="unlucky" value="plant">Having a dead plant on your desk.<br>
+        <input type="checkbox" name="unlucky" value="option1">A black cat crossing your path.<br>
+        <input type="checkbox" name="unlucky" value="option2">Walked under a ladder.<br>
+        <input type="checkbox" name="unlucky" value="option3">Failed to respond to a chain letter.<br>
+        <input type="checkbox" name="unlucky" value="option4">Tipped a salt shaker over.<br>
+        <input type="checkbox" name="unlucky" value="option5">Saw your doppelganger.<br>
       </div>
-      <button type="submit">Submit Survey</button>
+      <button type="submit" class="btn btn-dark">Give Fortune</button>
     </form>
     <span id="luckyOutput">
-      <p><b>You are lucky</b></p>
+      <h5>You are lucky</h5>
+      <br>
+      <img src="img/lucky.jpg" alt="lucky">
+      <br>
+      <p>After a gruelling journey across Middle Earth to deposit the ring in the fiery pit of Mount Doom, hobbits Frodo and Sam find themselves trapped on the lava-covered mountain slopes with seemingly nowhere to go. Cue the arrival of the eagles, swooping in at the last minute and plucking our brave heroes away from certain death just as the mountain collapses around them. The hobbits aren't the only ones to have been saved at the last minute by the eagles - Gandalf has also been saved by Gwaihir and his friends. Another hotly debated aspect of The Lord Of The Rings which did the rounds on the internet is the question as to why Gandalf didn't just get the eagles to fly the ring into Mount Doom in the first place. It certainly would've saved a lot of trouble for everyone else, but probably wouldn't have made for anywhere near as entertaining a story.</p>
+      <button value="Refresh Page" class="btn btn-dark" onClick="window.location.reload()">Start Over</button>
     </span>
     <span id="unluckyOutput">
-      <p><b>You are unlucky</b></p>
+      <h5>You are unlucky</h5>
+      <br>
+      <img src="img/unlucky.jpg" alt="unlucky">
+      <br>
+      <p>Everyone’s favorite high school slacker turned cry face champion on Breaking Bad has hit rock bottom and then some. When Jesse (Aaron Paul) isn’t dazed, confused, and frightened for his life, he’s manipulated by the only real father figure in his life — former chemistry teacher and meth partner, Walter White (Bryan Cranston). Jesse’s real family threw him to the curb, because they disapproved of his lifestyle. He’s been beat up by a crazed drug lord (Tuco) and DEA agent Hank Schrader (Dean Norris), held against his will, and coerced into killing. He’s also suffered the loss of his former girlfriend, Jane (Krysten Ritter) and remains haunted by the deaths of several children. We’re finally seeing Jesse take aim at Walter for all the wrongs during their tumultuous relationship, but the fate of his character still hangs in the balance. Will Jesse finally luck out for the finale of Breaking Bad?</p>
+      <p><button value="Refresh Page" class="btn btn-dark" onClick="window.location.reload()">Start Over</button></p>
     </span>
     <span id="neutralOutput">
-      <p><b>You are neither lucky or unlucky</b></p>
+      <h5>You are neither lucky or unlucky</h5>
+      <br>
+      <img src="img/neutral.jpg" alt="neutral">
+      <br>
+      <p>George Orson Welles was an American actor, director, writer and producer who worked in theatre, radio and film. He is remembered for his innovative work in all three: in theatre, most notably Caesar (1937), a Broadway adaptation of William Shakespeare's Julius Caesar; in radio, the long-remembered 1938 broadcast "The War of the Worlds"; and in film, Citizen Kane (1941), consistently ranked as one of the greatest films ever made.</p>
+      <button value="Refresh Page" class="btn btn-dark" onClick="window.location.reload()">Start Over</button>
     </span>
   </div>
 </body>
