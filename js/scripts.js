@@ -1,5 +1,5 @@
 $(function() {
-  $("form#luck-survey").submit(function(event){
+  $("form#luckSurvey").submit(function(event){
     event.preventDefault();
     var luckyCount = [];
     var unluckyCount = [];
@@ -12,10 +12,13 @@ $(function() {
     });
 
     if(luckyCount.length > unluckyCount.length) {
+      $("#luckSurvey").hide();
       $("#luckyOutput").show();
     } else if(unluckyCount.length > luckyCount.length) {
+      $("#luckSurvey").hide();
       $("#unluckyOutput").show();
     } else if(unluckyCount.length === luckyCount.length) {
+      $("#luckSurvey").hide();
       $("#neutralOutput").show();
     }
   });
